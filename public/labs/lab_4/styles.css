@@ -15,16 +15,16 @@ html, body {
 }
 
 body {
-  width: 70%;
-  min-width: 200px;
-  margin: 4 auto;
+  width: 60%;
+  min-width: 900px;
+  padding: 50px 0;
   background-color: #6091C3;
 }
 
 
 .container {
-  width: 100%;
-  max-width: 800px;
+  width: 90%;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -55,7 +55,7 @@ body {
   width : 50% 
 }
 .flex-outer > li:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .flex-outer li label,
@@ -68,7 +68,7 @@ body {
 .flex-outer > li > label,
 .flex-outer li p {
   flex: 1 0 220px;
-  max-width: 320px;
+  max-width: 250px;
 }
 
 .flex-outer > li > label + *,
@@ -82,7 +82,7 @@ body {
 
 .flex-outer li input:not([type='checkbox']),
 .flex-outer li textarea {
-  padding: 8px;
+  padding: 7px;
   border: none;
 }
 
@@ -94,11 +94,11 @@ body {
   color: #f2f2f2;
   text-transform: uppercase;
   letter-spacing: .09em;
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
-.flex-inner li {
-  width: 245px;
+.flex-inner {
+  justify-content: space-between;
 }
 
 
