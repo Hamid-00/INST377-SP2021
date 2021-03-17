@@ -1,0 +1,39 @@
+body{
+    line-height: 1.5;
+    font-size: 18px;
+    color: red;
+    padding: 0 10px;
+    margin-bottom: 1.5rem ;
+}
+.searches{
+    margin-bottom: 1.5rem ;
+}
+h1,
+h2,
+h3{
+    line-height: 1.2;
+    margin-bottom: 0.25rem;
+    font-weight: bold;
+}
+h3{
+    font-size: 0.5rem;
+    font-weight: lighter;
+}
+#mapid { height: 480px;}
+
+.list-header{
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.list-header{
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.list-item{
+    border-radius: 4px;
+    color: cyan(25, 25, 25, 90);
+    background: coral;
+    padding: 5px;
+}
