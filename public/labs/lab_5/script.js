@@ -1,5 +1,6 @@
 function mapInit() {
   // follow the Leaflet Getting Started tutorial here
+<<<<<<< HEAD
   const mymap = L.map('mapid').setView([38.9897, -76.9378], 13);
 
   L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
@@ -11,12 +12,15 @@ function mapInit() {
     accessToken: 'pk.eyJ1IjoiaGFtaWQtMDA2IiwiYSI6ImNrbWNjcG16bTA5azIycGxqMDE2dHkyZTMifQ.BhtEIPFfA9k1aONvSiLZnw'
 }).addTo(mymap);
 console.log('mymap',mymap);
+=======
+>>>>>>> 2f32180bc86c4d14d3ea20425f11337f9849cc51
   return map;
 }
 
 async function dataHandler(mapObjectFromFunction) {
   // use your assignment 1 data handling code here
   // and target mapObjectFromFunction to attach markers
+<<<<<<< HEAD
   const form = document.querySelector('#search-form');
   const search = document.querySelector('#search');
   const targetList = document.querySelector('.target-list');
@@ -45,6 +49,10 @@ async function dataHandler(mapObjectFromFunction) {
 }
 
 
+=======
+}
+
+>>>>>>> 2f32180bc86c4d14d3ea20425f11337f9849cc51
 async function windowActions() {
   const map = mapInit();
   await dataHandler(map);
