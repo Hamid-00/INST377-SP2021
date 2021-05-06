@@ -26,9 +26,24 @@ async function dataHandler(mapObjectFromFunction) {
 
   form.addEventListener('submit', async (event) => {
     event.preventDefault();
-    console.log('form submitted');
+    console.log('form submitted', searcg.value);
     const filtered = data.filter((record) => record.zip.includes(search.value) && record.geocoded_column_1);
+    const topFive = filtered.slice(0,5);
     console.table(filtered);
+
+    if (topFive.length <1) {
+      replyMessage.classlist.add('box');
+      replyMessage.innerText = 'No matches found';
+    } else {
+      console.table(topFive);
+      topFive.foreach((item) => {
+        const longLat = item.geocoded_column_1.coordinates;
+        console.log('marketLongLat', longlat[0],longlat[1]);
+        const marker = Lmarker([longLat[1], longLat[0]]).addTO(mapFromFunction);
+      }
+
+      )
+    }
 
     filtered.forEach((item) =>{
       const longLat = item.geocoded_column_1.coordinates;
